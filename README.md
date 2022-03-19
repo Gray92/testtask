@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+<h1>Тестовое задание для соискателя на должность junior frontend-разработчика</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Сервер(Данные пользователей): [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
 
-In the project directory, you can run:
+Макет: [https://www.figma.com/file/X8Ke95Xuc9ZXrZJ3DzQjOW/Тестовое-задание?node-id=2%3A2](https://www.figma.com/file/X8Ke95Xuc9ZXrZJ3DzQjOW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?node-id=2%3A2)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<ul>Необходимо сверстать предложенный макет, и написать простое SPA на React, используя следующие инструменты, технологии и подходы:</ul>
+  <li>Большим плюсом реализовать SPA с использованием TypeScript, но не обязательно<li>
+  <li>Препроцессор scss<li>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2>Задание на вёрстку выглядит следующим образом:</h2>
+    <ol>Список пользователей:
+      <li>Вывести 10 пользователей соответственно макету.</li>
+      <li>Пока идет загрузка списка пользователей должен быть индикатор загрузки</li>
+      <li>
+        <ul>Список пользователей:
+          <li>name</li>
+          <li>address.city</li>
+          <li>company.name</li>
+        </ul>
+      </li>Кнопка “Подробнее” должна вести на “Профиль пользователя”
+      <li>Реализовать фильтрацию списка по признаку Name и City в алфавитном порядке<li>
+    </ol>
+    
+    <ol>Профиль пользователя:
+      <li>
+        <ul>Вывести в профиле:
+          <li>name</li>
+          <li>username</li>
+          <li>email</li>
+          <li>address.street</li>
+          <li>address.city</li>
+          <li>address.zipcode</li>
+          <li>phone</li>
+          <li>website</li>
+        </ul>
+      </li>
+      <li>Все поля формы, кроме Comment, должны быть предзаполнены данными с сервера</li>
+      <li>Реализовать кнопку изменить, изначально поля должны быть readonly, после нажатия на кнопку поля можно редактировать</li>
+      <li>Реализовать валидацию на клиенте</li>
+      <li>Все поля формы, кроме поля Comment, обязательны для заполнения</li>
+      <li>Из данных формы при отправке нужно сформировать JSON и вывести его вконсоль.</li>
+    </ol>
+       
+    2. Все поля формы, кроме Comment, должны быть предзаполнены из [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
+    3. Реализовать кнопку изменить, изначально поля должны быть readonly, после нажатия на кнопку поля можно редактировать
+    4. Реализовать валидацию на клиенте
+    5. Все поля формы, кроме поля Comment, обязательны для заполнения
+    6. Из данных формы при отправке нужно сформировать JSON и вывести его вконсоль.
