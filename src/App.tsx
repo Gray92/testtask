@@ -26,17 +26,20 @@ const App: FC = () => {
 		fetchUser()
 	}, [])
 
-	
-	const sortUsersCity = (users: IUser[]) => {
-		setUsers([...users].sort((a, b) => a.address.city.localeCompare(b.address.city)))
+	const sortUsers = (users: IUser[], sortPath: string) => {
+		switch (sortPath) {
+			case 'city':
+				setUsers([...users].sort((a, b) => a.address.city.localeCompare(b.address.city)))
+				break
+			case 'company':
+				setUsers([...users].sort((a, b) => a.company.name.localeCompare(b.company.name)))
+				break
+		}
 	}
 
-	const sortUsersCompany = (users: IUser[]) => {
-		setUsers([...users].sort((a, b) => a.company.name.localeCompare(b.company.name)))
-	}
 
 	return (
-		<UsersContext.Provider value={{ isLoading, users, sortUsersCity, sortUsersCompany }}>
+		<UsersContext.Provider value={{ isLoading, users, sortUsers  }}>
 			<div className="App">
 				<SortBar />
 				<AppRouter />
